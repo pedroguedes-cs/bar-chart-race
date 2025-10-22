@@ -10,6 +10,7 @@ class BarChart
     std::string barChartTitle;
     int barChartVisibleBars;
     int barChartFPS;
+    int barChartFrameDelayMs;
     std::string barChartSourcePath;
     std::vector<std::vector<Bar>> barChartData;
 
@@ -18,14 +19,16 @@ class BarChart
         BarChart();
 
         // Setters
-        void setBarChartTitle(std::string title);
-        void setBarChartVisibleBars(int visibleBars);
-        void setBarChartFPS(int fps);
+        void setTitle(std::string title);
+        void setVisibleBars(int visibleBars);
+        void setFPS(int fps);
+        void setFrameDelayMs(int milliseconds);
 
         // Getters
-        std::string getBarChartTitle();
-        int getBarChartVisibleBars();
-        int getBarChartFPS();
+        std::string getTitle();
+        int getVisibleBars();
+        int getFPS();
+        int getFrameDelayMs();
 
         // Manipulation
         void loadFromFile();

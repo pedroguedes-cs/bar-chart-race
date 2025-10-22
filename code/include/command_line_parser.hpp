@@ -1,9 +1,5 @@
 #pragma once
 
-#include <string>
-#include <bar_chart.hpp>
+#include "bar_chart.hpp"
 
-void parseCommandLine(int argc, char* argv[])
-{
-
-}
+void parseCommandLine(int argc, char* argv[], BarChart& barChart);
