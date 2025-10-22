@@ -8,8 +8,9 @@
 class BarChart
 {
     std::string barChartTitle;
+    int barChartVisibleBars;
     int barChartFPS;
-    int barChartNumberOfFrames;
+    std::string barChartSourcePath;
     std::vector<std::vector<Bar>> barChartData;
 
     public:
@@ -17,10 +18,19 @@ class BarChart
         BarChart();
 
         // Setters
-        
+        void setBarChartTitle(std::string title);
+        void setBarChartVisibleBars(int visibleBars);
+        void setBarChartFPS(int fps);
+
         // Getters
+        std::string getBarChartTitle();
+        int getBarChartVisibleBars();
+        int getBarChartFPS();
 
         // Manipulation
+        void loadFromFile();
+        void sortFrames();
 
         // Animation
+        void renderBarChart();
 };
