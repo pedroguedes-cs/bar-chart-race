@@ -4,7 +4,7 @@
 
 
 // Bar chart race logic messages
-void printHelp();
+void printHelpMessage(std::string errorMessage = "");
 
 // General messages
 void printTitle();

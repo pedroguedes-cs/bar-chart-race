@@ -11,7 +11,7 @@ class BarChart
     int barChartVisibleBars;
     int barChartFPS;
     int barChartFrameDelayMs;
-    std::string barChartSourcePath;
+    std::string barChartDataFilePath;
     std::vector<std::vector<Bar>> barChartData;
 
     public:

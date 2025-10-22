@@ -1,8 +1,13 @@
 #include "../include/printer.hpp"
 
 
-void printHelp()
+void printHelpMessage(std::string errorMessage = "")
 {
+    std::cout << "\n\n========[HELP]\n\n";
+    if (errorMessage != "")
+    {
+        std::cout << "Error: " << errorMessage << "\n\n";
+    }
     std::cout << "Usage: bcr [<options>] <input_data-file>\n"
               << "  Bar chart race options:\n"  
               << "      -b <num> Max # of bars in a single chart.\n"  
