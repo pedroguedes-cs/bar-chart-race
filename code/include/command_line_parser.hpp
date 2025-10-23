@@ -3,3 +3,5 @@
 #include "bar_chart.hpp"
 
 void parseCommandLine(int argc, char* argv[], BarChart& barChart);
+
+bool isInteger(std::string text);

@@ -23,6 +23,7 @@ class BarChart
         void setVisibleBars(int visibleBars);
         void setFPS(int fps);
         void setFrameDelayMs(int milliseconds);
+        void setDataFilePath(std::string dataFilePath);
 
         // Getters
         std::string getTitle();
